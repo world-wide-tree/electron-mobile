@@ -1,3 +1,4 @@
+import 'package:electron/presentation/screens/devices/add_dialog.dart';
 import 'package:electron/presentation/screens/devices/device_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -53,10 +54,13 @@ class _DevicesScreenState extends State<DevicesScreen> {
               ),
             ),
           ),
-          ElevatedButton(
-            onPressed: () {},
+          ElevatedButton( 
+            onPressed: () {
+              showDialog(context: context, builder: (context) => AddDialog());
+            },
             child: Text(
               '+ ADD A DEVICE',
+              style: TextStyle(color: Colors.blue),
             ),
             style: ButtonStyle(
               fixedSize: MaterialStatePropertyAll(

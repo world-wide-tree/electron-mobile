@@ -91,7 +91,7 @@ class RootScreen extends StatelessWidget {
                   GButton(
                     icon: Devices.devices,
                     iconColor: Colors.white,
-                    text: 'Calculator',
+                    text: 'Devices',
                     textStyle: TextStyle(
                       fontSize: 15.0.sp,
                       fontWeight: FontWeight.w800,

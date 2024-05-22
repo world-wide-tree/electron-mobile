@@ -14,6 +14,7 @@ class ElectronEcoApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp.router(
+          debugShowCheckedModeBanner: false,
           theme: ThemeData(
             fontFamily: 'Nunito',
           ),

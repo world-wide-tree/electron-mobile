@@ -42,12 +42,12 @@ class RootScreen extends StatelessWidget {
       ),
       bottomNavigationBar: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 35.0.w),
+          padding: EdgeInsets.symmetric(horizontal: 35.0.w, vertical: 10),
           child: Hero(
             tag: '/button',
             child: Container(
               height: 56.0.h,
-              padding: EdgeInsets.symmetric(horizontal: 8.0.w),
+              padding: EdgeInsets.symmetric(horizontal: 8.0.w,),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15.0.sp),
                 color: const Color(0xFF4A76FD),

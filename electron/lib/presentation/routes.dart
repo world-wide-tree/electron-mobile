@@ -125,10 +125,6 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: '/dashboard/details',
       builder: (context, state) => const DetailsScreen(),
-
-      // pageBuilder: (context, state) => NoTransitionPage<void>(
-      //   child: DetailsScreen(),
-      // ),
     ),
     StatefulShellRoute.indexedStack(
       builder: (context, state, navigationShell) {
@@ -140,18 +136,11 @@ final GoRouter router = GoRouter(
         StatefulShellBranch(
           navigatorKey: _shellNavigatorDashboardKey,
           routes: [
-            // top route inside branch
             GoRoute(
               path: '/dashboard',
               pageBuilder: (context, state) => const NoTransitionPage<void>(
                 child: DashboardScreen(),
               ),
-              // routes: [
-              //   GoRoute(
-              //     path: 'details',
-              //     builder: (context, state) => const DetailsScreen(label: 'A'),
-              //   ),
-              // ],
             ),
           ],
         ),
@@ -163,12 +152,6 @@ final GoRouter router = GoRouter(
               pageBuilder: (context, state) => const NoTransitionPage<void>(
                 child: RoomsScreen(),
               ),
-              // routes: [
-              //   GoRoute(
-              //     path: 'details',
-              //     builder: (context, state) => const DetailsScreen(label: 'B'),
-              //   ),
-              // ],
             ),
           ],
         ),
@@ -180,12 +163,6 @@ final GoRouter router = GoRouter(
               pageBuilder: (context, state) =>  NoTransitionPage<void>(
                 child: DevicesScreen(rooms: ['Room1', 'Room2', 'Room3'],),
               ),
-              // routes: [
-              //   GoRoute(
-              //     path: 'details',
-              //     builder: (context, state) => const DetailsScreen(label: 'B'),
-              //   ),
-              // ],
             ),
           ],
         ),

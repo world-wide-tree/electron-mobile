@@ -25,6 +25,7 @@ class _RoomsWidgetState extends State<RoomsWidget> {
       //     border: Border.all(color: Colors.blue),
       //     borderRadius: BorderRadius.all(Radius.circular(8))),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Container(
               child: Image.asset(
@@ -41,9 +42,9 @@ class _RoomsWidgetState extends State<RoomsWidget> {
             ],
           ),
           SizedBox(
-            height: 10.h,
+            height: 5.h,
           ),
-          Text(widget.typeOfRoom),
+          Text('type of room: ${widget.typeOfRoom}'),
           
         ],
       ),

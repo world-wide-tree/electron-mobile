@@ -55,7 +55,7 @@ class DashboardScreen extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Earned bonuses',
+                          'Your balance',
                           style: TextStyle(
                             fontSize: 16.0.sp,
                             fontWeight: FontWeight.w600,
